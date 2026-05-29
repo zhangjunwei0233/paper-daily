@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 29 May 2026 08:56:47 +0000",
-  "generated_at_iso": "2026-05-29T08:56:47.331479+00:00",
+  "generated_at": "Fri, 29 May 2026 15:08:36 +0000",
+  "generated_at_iso": "2026-05-29T15:08:36.089176+00:00",
   "config_source": "issue",
   "topics": [
     {
@@ -272,7 +272,7 @@
     "llm_concurrency": 2,
     "recent_history_days": 45,
     "successful_fetches": 0,
-    "failed_fetches": 4,
+    "failed_fetches": 2,
     "retained_paper_count": 2,
     "retained_recent_low_count": 1,
     "dropped_low_relevance_count": 0,
