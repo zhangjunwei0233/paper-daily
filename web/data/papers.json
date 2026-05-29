@@ -1,99 +1,56 @@
 {
-  "generated_at": "Fri, 29 May 2026 15:08:36 +0000",
-  "generated_at_iso": "2026-05-29T15:08:36.089176+00:00",
+  "generated_at": "Fri, 29 May 2026 15:37:08 +0000",
+  "generated_at_iso": "2026-05-29T15:37:08.869270+00:00",
   "config_source": "issue",
   "topics": [
     {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
+      "id": "llm_agent_recursive_self_improvement",
+      "name": "LLM Agent 的递归自我改进",
+      "description": "关注大语言模型智能体通过自我反思、自我评估、自动反馈、工具使用、记忆积累、任务分解、代码生成与验证、环境交互和多轮迭代来持续改进自身能力的机制、系统与安全边界。",
       "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
+        "LLM agent recursive self improvement",
+        "recursive self improvement",
+        "self-improving agents",
+        "autonomous agents",
+        "LLM agent self-reflection",
+        "self-evaluation",
+        "agentic feedback loop",
+        "tool-using agents",
+        "agent memory",
+        "automated prompt optimization",
+        "code generation agents",
+        "AI agent safety"
       ],
       "arxiv_categories": [
-        "cs.CL",
-        "cs.LG",
         "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ]
+    },
+    {
+      "id": "small_models_in_agent_systems",
+      "name": "小模型在 Agent 系统中的应用",
+      "description": "关注小语言模型、小型多模态模型和专用轻量模型在智能体系统中的角色，包括路由、规划、工具选择、检索、记忆管理、任务执行、验证、蒸馏、端侧部署、成本优化和多模型协同。",
+      "keywords": [
+        "small language models for agents",
+        "small models in agent systems",
+        "SLM agents",
+        "lightweight agents",
+        "model routing",
+        "multi-model agent system",
+        "agent tool selection",
+        "agent planning",
+        "model distillation",
+        "edge AI agents",
+        "cost-efficient agents",
+        "specialized small models"
+      ],
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
         "cs.DC"
-      ]
-    },
-    {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
-      "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
-      ],
-      "arxiv_categories": [
-        "cs.AR",
-        "cs.DC",
-        "cs.LG",
-        "cs.PF"
-      ]
-    },
-    {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
-      "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
-      ],
-      "arxiv_categories": [
-        "cs.DC",
-        "cs.PF",
-        "cs.CL",
-        "cs.LG"
-      ]
-    },
-    {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
-      "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
-      ],
-      "arxiv_categories": [
-        "cs.CL",
-        "cs.LG",
-        "cs.DC",
-        "cs.PF"
       ]
     }
   ],
@@ -184,6 +141,70 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "2605.30104v1",
+      "source": "arXiv",
+      "title": "SEAL: Can Saturated Benchmarks Be Revived by LLM-as-a-Meta-Judge?",
+      "authors": [
+        "Jiamin Chen",
+        "Yidi Wu",
+        "Qiexiang Wang",
+        "Qianben Chen",
+        "Yuchen Li",
+        "Yansen Zhang",
+        "Xiaokun Zhang",
+        "Wangchunshu Zhou",
+        "Chen Ma"
+      ],
+      "summary": "Widely used language-model benchmarks are increasingly saturated, with frontier systems often receiving near-tied scores that standard metrics cannot resolve. Rather than constructing harder alternatives, we ask whether existing tasks can be made informative again through improved evaluation over the same candidate outputs. Therefore, we present Seeded Elimination with Adaptive LLM-as-a-Meta-Judge, a self-improving evaluation protocol for extracting latent ranking signal from saturated benchmarks. SEAL seeds candidate outputs into a single elimination and evaluates each match with task-level principles plus self-improving checklist criteria. We evaluate SEAL on multiple saturated benchmarks covering code generation, mathematical reasoning, knowledge-intensive question answering, and tool-use agent task completion. Across these settings, SEAL improves the ranking-accuracy--latency trade-off over competing protocols, attaining 0.83--1.00 Spearman agreement with full pairwise judging and 4/4 top-1 agreement, while requiring only 11.89 calls per task compared with 28.00 for full pairwise evaluation.",
+      "published": "2026-05-28T15:46:54Z",
+      "updated": "2026-05-28T15:46:54Z",
+      "paper_url": "http://arxiv.org/abs/2605.30104v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30104v1",
+      "categories": [
+        "cs.CL"
+      ],
+      "seed_topic": "llm_agent_recursive_self_improvement",
+      "matches": [
+        {
+          "topic_id": "llm_agent_recursive_self_improvement",
+          "topic_name": "LLM Agent 的递归自我改进",
+          "score": 0.742,
+          "level": "medium",
+          "reason": "arXiv 分类重合：cs.CL",
+          "keyword_hits": [],
+          "llm_reason": "该论文与研究方向有部分相关性，因为它涉及 LLM 自我评估、自动化反馈、评审准则自我改进以及对工具使用智能体任务完成的评估，这些都可作为 agentic feedback loop 或自我改进系统中的评估模块。但其核心贡献是饱和 benchmark 的排序评估，并非 LLM agent 的递归自我改进机制、记忆积累、环境交互或能力自增强系统本身。"
+        },
+        {
+          "topic_id": "small_models_in_agent_systems",
+          "topic_name": "小模型在 Agent 系统中的应用",
+          "score": 0.25,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CL",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "llm_agent_recursive_self_improvement",
+        "topic_name": "LLM Agent 的递归自我改进",
+        "score": 0.742,
+        "level": "medium",
+        "reason": "arXiv 分类重合：cs.CL",
+        "keyword_hits": [],
+        "llm_reason": "该论文与研究方向有部分相关性，因为它涉及 LLM 自我评估、自动化反馈、评审准则自我改进以及对工具使用智能体任务完成的评估，这些都可作为 agentic feedback loop 或自我改进系统中的评估模块。但其核心贡献是饱和 benchmark 的排序评估，并非 LLM agent 的递归自我改进机制、记忆积累、环境交互或能力自增强系统本身。"
+      },
+      "chinese_summary": {
+        "problem": "论文要解决的是常用语言模型基准逐渐饱和后，前沿系统得分接近、标准指标难以区分优劣的问题。作者不构造更难的新任务，而是尝试在相同候选输出上通过更强的评估协议重新提取排序信号。",
+        "method": "论文提出 SEAL，即 Seeded Elimination with Adaptive LLM-as-a-Meta-Judge，用单败淘汰式比较来组织候选输出，并让 LLM 作为元评审依据任务级原则和自我改进的 checklist 标准评判每场匹配。其目标是在减少评审调用次数的同时接近全量两两比较的排序效果。",
+        "innovation": "具体创新在于：将饱和基准的“复活”问题转化为同一输出集合上的更精细排序问题；使用自适应 LLM-as-a-Meta-Judge 和自我改进 checklist 来增强评审标准，而不是仅依赖固定指标；用单败淘汰结构降低全量 pairwise judging 的成本，并报告了排序准确性与延迟之间的改进。",
+        "evidence": "摘要称 SEAL 在多个饱和基准上评估，覆盖代码生成、数学推理、知识密集问答和工具使用智能体任务完成；其与全量两两评审的 Spearman 一致性为 0.83–1.00，top-1 一致性为 4/4；平均每个任务需要 11.89 次调用，而全量两两评审需要 28.00 次调用。",
+        "limitations": "摘要没有说明 self-improving checklist 的具体更新机制、是否存在闭环学习或跨任务记忆积累，也没有说明 LLM 元评审的偏差控制、稳定性、可复现性和安全风险。该方法主要改进评估协议，而不是直接让 LLM agent 通过多轮行动持续提升自身能力；是否能用于真实递归自我改进系统，需要阅读全文确认。",
+        "why_relevant": "该论文与研究方向有部分相关性，因为它涉及 LLM 自我评估、自动化反馈、评审准则自我改进以及对工具使用智能体任务完成的评估，这些都可作为 agentic feedback loop 或自我改进系统中的评估模块。但其核心贡献是饱和 benchmark 的排序评估，并非 LLM agent 的递归自我改进机制、记忆积累、环境交互或能力自增强系统本身。"
+      },
+      "first_seen_at": "2026-05-29T15:37:08.869270+00:00",
+      "last_seen_at": "2026-05-29T15:37:08.869270+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "2605.28488v1",
       "source": "arXiv",
       "title": "Bridging Maximum Likelihood and Optimal Transport for Efficient Inference and Model Selection in Stochastic Block Models",
@@ -262,30 +283,29 @@
     }
   ],
   "stats": {
-    "paper_count": 2,
-    "new_paper_count": 2,
+    "paper_count": 3,
+    "new_paper_count": 1,
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-05-27T13:18:49.361053+00:00",
+    "collection_cutoff_iso": "2026-05-28T15:37:08.869270+00:00",
     "max_per_topic": 25,
     "llm_enabled": true,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 0,
-    "failed_fetches": 2,
+    "successful_fetches": 2,
+    "failed_fetches": 0,
     "retained_paper_count": 2,
     "retained_recent_low_count": 1,
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 15246,
+    "data_bytes": 19989,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
       "medium": 0,
       "low": 0,
       "unknown": 0
-    },
-    "last_error": "All arXiv requests failed."
+    }
   }
 }
